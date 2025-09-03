@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hsa_analysis"
+version = "0.1.0"
+description = "Baseline and navigation data analysis utilities"
+requires-python = ">=3.8"
+dependencies = [
+    "shapely",
+    "pyproj"
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-q"
